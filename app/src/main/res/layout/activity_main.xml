@@ -1,18 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Romani Millennium" />
+
+
+        <TextView
+            android:id="@+id/q1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q1. Emperor Augustus was desxribed as a average normal looking Roman man with not distinct feature except for one thing: What was it?"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/q1_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="His height" />
+
+            <RadioButton
+                android:id="@+id/q1_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="His eyes" />
+
+            <RadioButton
+                android:id="@+id/q1_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="His abs" />
+
+            <RadioButton
+                android:id="@+id/q1_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="His voice" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/q2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q2. Which Roman General was the blood bother of Attila the Hun and was the first to beat him in battle?"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/q2_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flavius Aetius" />
+
+            <RadioButton
+                android:id="@+id/q2_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flavius Majorianus" />
+
+            <RadioButton
+                android:id="@+id/q2_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flavius Stilicho" />
+
+            <RadioButton
+                android:id="@+id/q2_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flavius Belisarius" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/q3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q3. Which of these men where apart of the First Triumvirate"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <CheckBox
+            android:id="@+id/q3_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Julius Caesar" />
+
+        <CheckBox
+            android:id="@+id/q3_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Augustus Caeser" />
+
+        <CheckBox
+            android:id="@+id/q3_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mark Antony" />
+
+        <CheckBox
+            android:id="@+id/q3_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pompey" />
+
+        <CheckBox
+            android:id="@+id/q3_e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cicero" />
+
+        <CheckBox
+            android:id="@+id/q3_f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marcus Crassus" />
+
+        <CheckBox
+            android:id="@+id/q3_g"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scipio Africanus" />
+
+    </LinearLayout>
+
+</ScrollView>

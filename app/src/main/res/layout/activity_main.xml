@@ -143,6 +143,23 @@
             android:layout_height="wrap_content"
             android:text="Scipio Africanus" />
 
+        <TextView
+            android:id="@+id/q4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q4. There is a certain nickname given to the greatest military leaders. A name in which Napoleon himself wanted but failed to achieve. What is the nickname?"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/q4_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="What is the nickname?"
+            android:inputType="textCapWords"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
     </LinearLayout>
 
 </ScrollView>

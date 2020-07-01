@@ -16,19 +16,12 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    int questionThree = 0;
     int score = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
-
-
-    private void displayScore(int totalScore) {
-        TextView score = (TextView) findViewById(R.id.score);
-        score.setText("" + totalScore);
     }
 
 
@@ -63,21 +56,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void questionThree(View view) {
-        CheckBox choiceOne = (CheckBox) findViewById(R.id.q3_a);
-        boolean choiceOneChecked = choiceOne.isChecked();
-
-        CheckBox choiceTwo = (CheckBox) findViewById(R.id.q3_d);
-        boolean choiceTwoChecked = choiceTwo.isChecked();
-
-        CheckBox choiceThree = (CheckBox) findViewById(R.id.q3_f);
-        boolean choiceThreeChecked = choiceThree.isChecked();
-
-        int checkThree = questionThreeCheck(choiceOneChecked, choiceTwoChecked, choiceThreeChecked);
-
-
-    }
-
     private int questionThreeCheck(boolean julius, boolean pompey, boolean crassus) {
         int point = 0;
 
@@ -98,16 +76,15 @@ public class MainActivity extends AppCompatActivity {
 
     public boolean questionThreeAns(){
         CheckBox choiceOne = (CheckBox) findViewById(R.id.q3_a);
+        CheckBox choiceTwo = (CheckBox) findViewById(R.id.q3_b);
+        CheckBox choiceThree = (CheckBox) findViewById(R.id.q3_c);
+        CheckBox choiceFour = (CheckBox) findViewById(R.id.q3_d);
+        CheckBox choiceFive = (CheckBox) findViewById(R.id.q3_e);
+        CheckBox choiceSix = (CheckBox) findViewById(R.id.q3_f);
+        CheckBox choiceSeven = (CheckBox) findViewById(R.id.q3_g);
 
-        CheckBox choiceTwo = (CheckBox) findViewById(R.id.q3_d);
-
-        CheckBox choiceThree = (CheckBox) findViewById(R.id.q3_f);
-
-        if(choiceOne.isChecked() && choiceTwo.isChecked() && choiceThree.isChecked()) {
-            return true;
-        }
-
-        return false;
+        return choiceOne.isChecked() && !choiceTwo.isChecked() && !choiceThree.isChecked() && choiceFour.isChecked() &&
+                !choiceFive.isChecked() && choiceSix.isChecked() && !choiceSeven.isChecked();
     }
 
     String last = "Last Roman";

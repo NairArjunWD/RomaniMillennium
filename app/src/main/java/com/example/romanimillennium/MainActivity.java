@@ -31,12 +31,6 @@ public class MainActivity extends AppCompatActivity {
         score.setText("" + totalScore);
     }
 
-    private void displayScoreTwo(int checkThree) {
-        TextView scoreTwo = (TextView) findViewById(R.id.scoreTwo);
-        scoreTwo.setText("" + checkThree);
-    }
-
-
 
     public void questionOneAns(View view) {
 
@@ -81,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
 
         int checkThree = questionThreeCheck(choiceOneChecked, choiceTwoChecked, choiceThreeChecked);
 
-        displayScoreTwo(score + checkThree);
+
     }
 
     private int questionThreeCheck(boolean julius, boolean pompey, boolean crassus) {
@@ -121,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
     private boolean questionFourAns() {
         EditText roman = (EditText)findViewById(R.id.q4_a);
 
-        return roman.getText().toString().equals(last);
+        return roman.getText().toString().equalsIgnoreCase(last);
     }
 
 

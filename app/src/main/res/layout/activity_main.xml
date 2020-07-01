@@ -97,55 +97,58 @@
                 android:text="Flavius Belisarius" />
         </RadioGroup>
 
-<!--        <TextView-->
-<!--            android:id="@+id/q3"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Q3. Which of these men where apart of the First Triumvirate"-->
-<!--            android:layout_marginTop="16dp"-->
-<!--            android:layout_marginBottom="16dp"/>-->
+        <TextView
+            android:id="@+id/q3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q3. Which of these men where apart of the First Triumvirate"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
 
-<!--        <CheckBox-->
-<!--            android:id="@+id/q3_a"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Julius Caesar" />-->
+        <CheckBox
+            android:id="@+id/q3_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Julius Caesar"
+            />
 
-<!--        <CheckBox-->
-<!--            android:id="@+id/q3_b"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Augustus Caeser" />-->
+        <CheckBox
+            android:id="@+id/q3_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Augustus Caeser" />
 
-<!--        <CheckBox-->
-<!--            android:id="@+id/q3_c"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Mark Antony" />-->
+        <CheckBox
+            android:id="@+id/q3_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mark Antony" />
 
-<!--        <CheckBox-->
-<!--            android:id="@+id/q3_d"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Pompey" />-->
+        <CheckBox
+            android:id="@+id/q3_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pompey"
+            />
 
-<!--        <CheckBox-->
-<!--            android:id="@+id/q3_e"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Cicero" />-->
+        <CheckBox
+            android:id="@+id/q3_e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cicero" />
 
-<!--        <CheckBox-->
-<!--            android:id="@+id/q3_f"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Marcus Crassus" />-->
+        <CheckBox
+            android:id="@+id/q3_f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marcus Crassus"
+            />
 
-<!--        <CheckBox-->
-<!--            android:id="@+id/q3_g"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Scipio Africanus" />-->
+        <CheckBox
+            android:id="@+id/q3_g"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scipio Africanus" />
 
 <!--        <TextView-->
 <!--            android:id="@+id/q4"-->
@@ -210,12 +213,19 @@
             android:text="0"
             android:layout_marginBottom="40dp"/>
 
+        <TextView
+            android:id="@+id/scoreTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginBottom="40dp"/>
+
         <Button
             android:id="@+id/submit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Submit"
-            android:onClick="submit"
+            android:onClick="finalScore"
             android:layout_marginBottom="40dp"/>
 
 

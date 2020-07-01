@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    int questionThree = 0;
     int score = 0;
 
     @Override
@@ -39,6 +40,11 @@ public class MainActivity extends AppCompatActivity {
     private void displayScore(int totalScore) {
         TextView score = (TextView) findViewById(R.id.score);
         score.setText("" + totalScore);
+    }
+
+    private void displayScoreTwo(int checkThree) {
+        TextView scoreTwo = (TextView) findViewById(R.id.scoreTwo);
+        scoreTwo.setText("" + checkThree);
     }
 
 
@@ -83,6 +89,101 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+//    public void questionThreeAnsOne(View view) {
+//        CheckBox julius = (CheckBox) findViewById(R.id.q3_a);
+//        boolean questionThreeA = julius.isChecked();
+//
+//        CheckBox pompey = (CheckBox) findViewById(R.id.q3_d);
+//        boolean questionThreeD = pompey.isChecked();
+//
+//        CheckBox crassus = (CheckBox) findViewById(R.id.q3_f);
+//        boolean questionThreeF = crassus.isChecked();
+//
+//        if (questionThreeA && questionThreeD && questionThreeF == true) {
+//            score++;
+//        }
+//    }
+
+//    public void questionThree(View view) {
+//        // Is the view now checked?
+//        boolean checked = ((CheckBox) view).isChecked();
+//
+//        // Check which checkbox was clicked
+//        switch(view.getId()) {
+//            case R.id.q3_a:
+//                if (checked)
+//                // Add 1
+//                    score ++;
+//            else
+//                // Nothing
+//                break;
+//            case R.id.q3_d:
+//                if (checked)
+//                // Add 1
+//                    score ++;
+//            else
+//                // Nothing
+//                break;
+//            case R.id.q3_f:
+//                if (checked)
+//                    // Add 1
+//                    score ++;
+////                    if (questionThree == 3) {
+////                        score ++;
+////                    }
+//                else
+//                // Nothing
+//                break;
+//        }
+//    }
+
+    public void questionThree(View view) {
+        CheckBox choiceOne = (CheckBox) findViewById(R.id.q3_a);
+        boolean choiceOneChecked = choiceOne.isChecked();
+
+        CheckBox choiceTwo = (CheckBox) findViewById(R.id.q3_d);
+        boolean choiceTwoChecked = choiceTwo.isChecked();
+
+        CheckBox choiceThree = (CheckBox) findViewById(R.id.q3_f);
+        boolean choiceThreeChecked = choiceThree.isChecked();
+
+        int checkThree = questionThreeCheck(choiceOneChecked, choiceTwoChecked, choiceThreeChecked);
+
+        displayScoreTwo(score + checkThree);
+    }
+
+    private int questionThreeCheck(boolean julius, boolean pompey, boolean crassus) {
+        int point = 0;
+
+        if(julius) {
+            point = point +1;
+        }
+
+        if(pompey) {
+            point = point +1;
+        }
+
+        if(crassus) {
+            point = point +1;
+        }
+
+        return score + (3 / point);
+    }
+
+    private boolean questionThreeAns(){
+        CheckBox choiceOne = (CheckBox) findViewById(R.id.q3_a);
+
+        CheckBox choiceTwo = (CheckBox) findViewById(R.id.q3_d);
+
+        CheckBox choiceThree = (CheckBox) findViewById(R.id.q3_f);
+
+        if(choiceOne.isChecked() && choiceTwo.isChecked() && choiceThree.isChecked()) {
+            return true;
+        }
+
+        return false;
+    }
+
     public void questionFiveAns(View view) {
 
         boolean checked = ((RadioButton) view).isChecked();
@@ -95,6 +196,17 @@ public class MainActivity extends AppCompatActivity {
                 TextView quizScore = (TextView) findViewById(R.id.score);
                 quizScore.setText("" + score);
                 break;
+        }
+    }
+
+    public void finalScore(View view) {
+        if (questionThreeAns()) {
+            score++;
+            TextView quizScore = (TextView) findViewById(R.id.score);
+            quizScore.setText("FinalScore: " + score +"/5");
+        } else  {
+            TextView quizScore = (TextView) findViewById(R.id.score);
+            quizScore.setText("FinalScore: " + score +"/5");
         }
     }
 //

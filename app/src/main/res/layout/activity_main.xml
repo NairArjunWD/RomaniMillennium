@@ -28,9 +28,11 @@
             android:layout_marginBottom="16dp"/>
 
         <RadioGroup
+            android:id="@+id/questionOne"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            >
             <RadioButton
                 android:id="@+id/q1_a"
                 android:layout_width="wrap_content"
@@ -41,7 +43,8 @@
                 android:id="@+id/q1_b"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="His eyes" />
+                android:text="His eyes"
+                android:onClick="questionOneAns"/>
 
             <RadioButton
                 android:id="@+id/q1_c"
@@ -72,7 +75,8 @@
                 android:id="@+id/q2_a"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Flavius Aetius" />
+                android:text="Flavius Aetius"
+                android:onClick="questionTwoAns"/>
 
             <RadioButton
                 android:id="@+id/q2_b"
@@ -93,72 +97,72 @@
                 android:text="Flavius Belisarius" />
         </RadioGroup>
 
-        <TextView
-            android:id="@+id/q3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Q3. Which of these men where apart of the First Triumvirate"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"/>
+<!--        <TextView-->
+<!--            android:id="@+id/q3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Q3. Which of these men where apart of the First Triumvirate"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginBottom="16dp"/>-->
 
-        <CheckBox
-            android:id="@+id/q3_a"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Julius Caesar" />
+<!--        <CheckBox-->
+<!--            android:id="@+id/q3_a"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Julius Caesar" />-->
 
-        <CheckBox
-            android:id="@+id/q3_b"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Augustus Caeser" />
+<!--        <CheckBox-->
+<!--            android:id="@+id/q3_b"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Augustus Caeser" />-->
 
-        <CheckBox
-            android:id="@+id/q3_c"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Mark Antony" />
+<!--        <CheckBox-->
+<!--            android:id="@+id/q3_c"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Mark Antony" />-->
 
-        <CheckBox
-            android:id="@+id/q3_d"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Pompey" />
+<!--        <CheckBox-->
+<!--            android:id="@+id/q3_d"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Pompey" />-->
 
-        <CheckBox
-            android:id="@+id/q3_e"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Cicero" />
+<!--        <CheckBox-->
+<!--            android:id="@+id/q3_e"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Cicero" />-->
 
-        <CheckBox
-            android:id="@+id/q3_f"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Marcus Crassus" />
+<!--        <CheckBox-->
+<!--            android:id="@+id/q3_f"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Marcus Crassus" />-->
 
-        <CheckBox
-            android:id="@+id/q3_g"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Scipio Africanus" />
+<!--        <CheckBox-->
+<!--            android:id="@+id/q3_g"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Scipio Africanus" />-->
 
-        <TextView
-            android:id="@+id/q4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Q4. There is a certain nickname given to the greatest military leaders. A name in which Napoleon himself wanted but failed to achieve. What is the nickname?"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"/>
+<!--        <TextView-->
+<!--            android:id="@+id/q4"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Q4. There is a certain nickname given to the greatest military leaders. A name in which Napoleon himself wanted but failed to achieve. What is the nickname?"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginBottom="16dp"/>-->
 
-        <EditText
-            android:id="@+id/q4_a"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="What is the nickname?"
-            android:inputType="textCapWords"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"/>
+<!--        <EditText-->
+<!--            android:id="@+id/q4_a"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="What is the nickname?"-->
+<!--            android:inputType="textCapWords"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginBottom="16dp"/>-->
 
         <TextView
             android:id="@+id/q5"
@@ -172,7 +176,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginBottom="40dp">
+            android:layout_marginBottom="16dp">
             <RadioButton
                 android:id="@+id/q5_a"
                 android:layout_width="wrap_content"
@@ -189,7 +193,8 @@
                 android:id="@+id/q5_c"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Man of the Mountain" />
+                android:text="Man of the Mountain"
+                android:onClick="questionFiveAns"/>
 
             <RadioButton
                 android:id="@+id/q5_d"
@@ -197,6 +202,22 @@
                 android:layout_height="wrap_content"
                 android:text="The Sleeping Emperor" />
         </RadioGroup>
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginBottom="40dp"/>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:onClick="submit"
+            android:layout_marginBottom="40dp"/>
+
 
     </LinearLayout>
 

@@ -10,10 +10,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="20dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        style="@style/AppTheme">
 
         <TextView
             android:id="@+id/title"
+            style="@style/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Romani Millennium" />
@@ -21,6 +23,7 @@
 
         <TextView
             android:id="@+id/q1"
+            style="@style/AppTheme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Q1. Emperor Augustus was desxribed as a average normal looking Roman man with not distinct feature except for one thing: What was it?"
@@ -29,6 +32,7 @@
 
         <RadioGroup
             android:id="@+id/questionOne"
+            style="@style/AppTheme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -150,22 +154,22 @@
             android:layout_height="wrap_content"
             android:text="Scipio Africanus" />
 
-<!--        <TextView-->
-<!--            android:id="@+id/q4"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Q4. There is a certain nickname given to the greatest military leaders. A name in which Napoleon himself wanted but failed to achieve. What is the nickname?"-->
-<!--            android:layout_marginTop="16dp"-->
-<!--            android:layout_marginBottom="16dp"/>-->
+        <TextView
+            android:id="@+id/q4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q4. There is a certain nickname given to the greatest military leaders. A name in which Napoleon himself wanted but failed to achieve. What is the nickname?"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
 
-<!--        <EditText-->
-<!--            android:id="@+id/q4_a"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:hint="What is the nickname?"-->
-<!--            android:inputType="textCapWords"-->
-<!--            android:layout_marginTop="16dp"-->
-<!--            android:layout_marginBottom="16dp"/>-->
+        <EditText
+            android:id="@+id/q4_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="What is the nickname?"
+            android:inputType="textCapWords"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
 
         <TextView
             android:id="@+id/q5"
@@ -225,6 +229,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Submit"
+            style="@style/AppTheme"
             android:onClick="finalScore"
             android:layout_marginBottom="40dp"/>
 

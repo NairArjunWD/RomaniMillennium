@@ -111,21 +111,22 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    private void resetQuiz(){
+        score = 0;
+    }
+
     public void finalScore(View view) {
         if (questionThreeAns() && questionFourAns()) {
             score += 2;
-            TextView quizScore = (TextView) findViewById(R.id.score);
-            quizScore.setText("FinalScore: " + score +"/5");
-            quizScore.setVisibility(View.VISIBLE);
+            Toast.makeText(MainActivity.this, "Final Score: " + score + "/5", Toast.LENGTH_LONG).show();
+            resetQuiz();
         } else if (questionThreeAns() || questionFourAns()){
             score ++;
-            TextView quizScore = (TextView) findViewById(R.id.score);
-            quizScore.setText("FinalScore: " + score +"/5");
-            quizScore.setVisibility(View.VISIBLE);
+            Toast.makeText(MainActivity.this, "Final Score: " + score + "/5", Toast.LENGTH_LONG).show();
+            resetQuiz();
         } else {
-            TextView quizScore = (TextView) findViewById(R.id.score);
-            quizScore.setText("FinalScore: " + score +"/5");
-            quizScore.setVisibility(View.VISIBLE);
+            Toast.makeText(MainActivity.this, "Final Score: " + score + "/5", Toast.LENGTH_LONG).show();
+            resetQuiz();
         }
     }
 

@@ -160,6 +160,44 @@
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"/>
 
+        <TextView
+            android:id="@+id/q5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q5. There is a legend in Greece that dates back to the fall of Byzantium. The legend states that during their darkest times, when the descendants of Rome need him most, he will descend and restore the Roman EMpire. Who is he referred to as?"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="40dp">
+            <RadioButton
+                android:id="@+id/q5_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Old Man of the Tower" />
+
+            <RadioButton
+                android:id="@+id/q5_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Wandering Emperor" />
+
+            <RadioButton
+                android:id="@+id/q5_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Man of the Mountain" />
+
+            <RadioButton
+                android:id="@+id/q5_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Sleeping Emperor" />
+        </RadioGroup>
+
     </LinearLayout>
 
 </ScrollView>

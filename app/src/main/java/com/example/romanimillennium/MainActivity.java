@@ -34,8 +34,8 @@ public class MainActivity extends AppCompatActivity {
             case R.id.q1_b:
                 if (checked)
                     score++;
-                TextView quizScore = (TextView) findViewById(R.id.score);
-                quizScore.setText("" + score);
+                TextView score = findViewById(R.id.score);
+                score.setText("" + score);
                 break;
         }
 
@@ -50,28 +50,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.q2_a:
                 if (checked)
                     score++;
-                TextView quizScore = (TextView) findViewById(R.id.score);
-                quizScore.setText("" + score);
+                TextView score = findViewById(R.id.score);
+                score.setText("" + score);
                 break;
         }
-    }
-
-    private int questionThreeCheck(boolean julius, boolean pompey, boolean crassus) {
-        int point = 0;
-
-        if(julius) {
-            point = point +1;
-        }
-
-        if(pompey) {
-            point = point +1;
-        }
-
-        if(crassus) {
-            point = point +1;
-        }
-
-        return score + (3 / point);
     }
 
     public boolean questionThreeAns(){

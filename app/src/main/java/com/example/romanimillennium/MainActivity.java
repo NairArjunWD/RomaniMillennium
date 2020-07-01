@@ -139,13 +139,16 @@ public class MainActivity extends AppCompatActivity {
             score += 2;
             TextView quizScore = (TextView) findViewById(R.id.score);
             quizScore.setText("FinalScore: " + score +"/5");
+            quizScore.setVisibility(View.VISIBLE);
         } else if (questionThreeAns() || questionFourAns()){
             score ++;
             TextView quizScore = (TextView) findViewById(R.id.score);
             quizScore.setText("FinalScore: " + score +"/5");
+            quizScore.setVisibility(View.VISIBLE);
         } else {
             TextView quizScore = (TextView) findViewById(R.id.score);
             quizScore.setText("FinalScore: " + score +"/5");
+            quizScore.setVisibility(View.VISIBLE);
         }
     }
 

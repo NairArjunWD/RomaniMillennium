@@ -16,4 +16,6 @@ The app shows a your score in the form of a toast.
 
 ## To Do
 
-Add more questions.
+ - Add more questions
+ - Make the questions provide sources at the end
+ - Change design of the app
